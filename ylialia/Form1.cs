@@ -6,6 +6,7 @@ namespace ylialia
         public Form1()
         {
             InitializeComponent();
+            
             InitializeGraph();
         }
         private void InitializeGraph()
@@ -28,7 +29,9 @@ namespace ylialia
             if (graph.ContainsKey(start) && graph.ContainsKey(end))
             {
                 int shortestPath = Dijkstra(graph, start, end);
-                lblResult.Text = $"от {start} до {end}: {shortestPath} - это всё яндекс.навигатор";
+                lblResult.Text = $"от {start} до {end}: {shortestPath} - это всё долбанный яндекс.навигатор";
+                pictureBox4.Image = new Bitmap("C:\\Users\\user\\source\\repos\\ylialia_Git_2\\ylialia\\bin\\Debug\\net8.0-windows\\loveit.gif");
+                pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             }
             else
             {

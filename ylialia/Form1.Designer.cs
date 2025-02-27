@@ -37,9 +37,11 @@
             pictureBox2 = new PictureBox();
             label1 = new Label();
             pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // lblResult
@@ -117,17 +119,27 @@
             // 
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(402, 338);
+            pictureBox3.Location = new Point(402, 425);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(259, 250);
+            pictureBox3.Size = new Size(154, 163);
             pictureBox3.TabIndex = 12;
             pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Location = new Point(581, 385);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(312, 203);
+            pictureBox4.TabIndex = 13;
+            pictureBox4.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(914, 600);
+            Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
@@ -142,6 +154,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -155,5 +168,6 @@
         private PictureBox pictureBox2;
         private Label label1;
         private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
     }
 }
