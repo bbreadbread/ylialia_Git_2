@@ -28,7 +28,7 @@ namespace ylialia
             if (graph.ContainsKey(start) && graph.ContainsKey(end))
             {
                 int shortestPath = Dijkstra(graph, start, end);
-                lblResult.Text = $"Кратчайший путь от {start} до {end}: {shortestPath}";
+                lblResult.Text = $"от {start} до {end}: {shortestPath} - это всё яндекс.навигатор";
             }
             else
             {
