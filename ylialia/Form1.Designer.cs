@@ -29,24 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            pictureBox1 = new PictureBox();
             lblResult = new Label();
             txtEnd = new TextBox();
             txtStart = new TextBox();
             btnFindPath = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 405);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
             // 
             // lblResult
             // 
@@ -83,6 +72,18 @@
             btnFindPath.TabIndex = 6;
             btnFindPath.Text = "ВЫЯСНИТЬ";
             btnFindPath.UseVisualStyleBackColor = true;
+            btnFindPath.Click += btnFindPath_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Top;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(800, 405);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -102,11 +103,10 @@
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Label lblResult;
         private TextBox txtEnd;
         private TextBox txtStart;
         private Button btnFindPath;
+        private PictureBox pictureBox1;
     }
 }

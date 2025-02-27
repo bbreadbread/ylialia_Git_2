@@ -6,5 +6,11 @@ namespace ylialia
         {
             InitializeComponent();
         }
+
+        private void btnFindPath_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            random.Next(15);
+        }
     }
 }
