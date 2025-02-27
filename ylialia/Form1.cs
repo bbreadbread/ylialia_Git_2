@@ -25,5 +25,44 @@ namespace ylialia
             Random random = new Random();
             random.Next(15);
         }
+
+        private int Dijkstra(Dictionary<string, Dictionary<string, int>> graph, string start, string end)
+        {
+            var distances = new Dictionary<string, int>();
+            var priorityQueue = new SortedSet<(int distance, string node)>();
+            var previous = new Dictionary<string, string>();
+
+            foreach (var node in graph.Keys)
+            {
+                distances[node] = int.MaxValue;
+                previous[node] = null;
+            }
+
+            distances[start] = 0;
+            priorityQueue.Add((0, start));
+
+            while (priorityQueue.Count > 0)
+            {
+                var (currentDistance, currentNode) = priorityQueue.Min;
+                priorityQueue.Remove(priorityQueue.Min);
+
+                if (currentNode == end)
+                    return currentDistance;
+
+                foreach (var neighbor in graph[currentNode])
+                {
+                    var newDistance = currentDistance + neighbor.Value;
+
+                    if (newDistance < distances[neighbor.Key])
+                    {
+                        distances[neighbor.Key] = newDistance;
+                        previous[neighbor.Key] = currentNode;
+                        priorityQueue.Add((newDistance, neighbor.Key));
+                    }
+                }
+            }
+
+            return distances[end];
+        }
     }
 }
