@@ -134,6 +134,7 @@
             pictureBox4.Size = new Size(312, 203);
             pictureBox4.TabIndex = 13;
             pictureBox4.TabStop = false;
+            pictureBox4.Visible = false;
             // 
             // Form1
             // 
