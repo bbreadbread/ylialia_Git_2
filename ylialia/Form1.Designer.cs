@@ -34,41 +34,47 @@
             txtStart = new TextBox();
             btnFindPath = new Button();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // lblResult
             // 
             lblResult.AutoSize = true;
             lblResult.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            lblResult.Location = new Point(520, 416);
+            lblResult.Location = new Point(130, 507);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(146, 25);
+            lblResult.Size = new Size(181, 32);
             lblResult.TabIndex = 9;
             lblResult.Text = "В ОЖИДАНИИ";
             // 
             // txtEnd
             // 
             txtEnd.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            txtEnd.Location = new Point(250, 412);
+            txtEnd.Location = new Point(141, 422);
+            txtEnd.Margin = new Padding(3, 4, 3, 4);
             txtEnd.Name = "txtEnd";
-            txtEnd.Size = new Size(129, 33);
+            txtEnd.Size = new Size(70, 39);
             txtEnd.TabIndex = 8;
             // 
             // txtStart
             // 
             txtStart.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            txtStart.Location = new Point(115, 412);
+            txtStart.Location = new Point(46, 422);
+            txtStart.Margin = new Padding(3, 4, 3, 4);
             txtStart.Name = "txtStart";
-            txtStart.Size = new Size(129, 33);
+            txtStart.Size = new Size(70, 39);
             txtStart.TabIndex = 7;
             // 
             // btnFindPath
             // 
             btnFindPath.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            btnFindPath.Location = new Point(385, 411);
+            btnFindPath.Location = new Point(233, 419);
+            btnFindPath.Margin = new Padding(3, 4, 3, 4);
             btnFindPath.Name = "btnFindPath";
-            btnFindPath.Size = new Size(129, 34);
+            btnFindPath.Size = new Size(214, 45);
             btnFindPath.TabIndex = 6;
             btnFindPath.Text = "ВЫЯСНИТЬ";
             btnFindPath.UseVisualStyleBackColor = true;
@@ -79,25 +85,49 @@
             pictureBox1.Dock = DockStyle.Top;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 405);
+            pictureBox1.Size = new Size(914, 382);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(529, 434);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(373, 154);
+            pictureBox2.TabIndex = 10;
+            pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(697, 398);
+            label1.Name = "label1";
+            label1.Size = new Size(153, 20);
+            label1.TabIndex = 11;
+            label1.Text = "Это я дичь добавила";
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(label1);
+            Controls.Add(pictureBox2);
             Controls.Add(lblResult);
             Controls.Add(txtEnd);
             Controls.Add(txtStart);
             Controls.Add(btnFindPath);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -108,5 +138,7 @@
         private TextBox txtStart;
         private Button btnFindPath;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Label label1;
     }
 }
