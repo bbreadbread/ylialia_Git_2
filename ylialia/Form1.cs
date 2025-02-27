@@ -22,8 +22,18 @@ namespace ylialia
         }
         private void btnFindPath_Click(object sender, EventArgs e)
         {
-            Random random = new Random();
-            random.Next(15);
+            string start = txtStart.Text.ToUpper();
+            string end = txtEnd.Text.ToUpper();
+
+            if (graph.ContainsKey(start) && graph.ContainsKey(end))
+            {
+                int shortestPath = Dijkstra(graph, start, end);
+                lblResult.Text = $"Кратчайший путь от {start} до {end}: {shortestPath}";
+            }
+            else
+            {
+                lblResult.Text = "Некорректные точки!";
+            }
         }
 
         private int Dijkstra(Dictionary<string, Dictionary<string, int>> graph, string start, string end)
