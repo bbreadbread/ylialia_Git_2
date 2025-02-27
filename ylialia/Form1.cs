@@ -30,7 +30,7 @@ namespace ylialia
             {
                 int shortestPath = Dijkstra(graph, start, end);
                 lblResult.Text = $"от {start} до {end}: {shortestPath} - это всё долбанный яндекс.навигатор";
-                pictureBox4.Image = new Bitmap("C:\\Users\\user\\source\\repos\\ylialia_Git_2\\ylialia\\bin\\Debug\\net8.0-windows\\loveit.gif");
+                pictureBox4.Image = new Bitmap("loveit.gif");
                 pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             }
             else
