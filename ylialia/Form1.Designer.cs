@@ -36,8 +36,10 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label1 = new Label();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // lblResult
@@ -111,11 +113,22 @@
             label1.TabIndex = 11;
             label1.Text = "Это я дичь добавила";
             // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox3.Location = new Point(402, 338);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(259, 250);
+            pictureBox3.TabIndex = 12;
+            pictureBox3.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(pictureBox3);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(lblResult);
@@ -128,6 +141,7 @@
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -140,5 +154,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label1;
+        private PictureBox pictureBox3;
     }
 }
