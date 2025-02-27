@@ -127,6 +127,8 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
+            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox4.Location = new Point(581, 385);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(312, 203);
